@@ -1,0 +1,61 @@
+*{
+box-sizing: border-box;
+}
+#tab th,td{
+padding: 15px 50px;
+margin: auto;
+}
+.form-group input{
+width: 80px;
+height: 30px;
+}
+.form-group a{
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	font-weight: 990;
+	border: 1px solid transparent;
+	border-radius: 25%;
+	color: white;
+	background-color: Red;
+	margin: 0 10px;
+	padding: 0 5px;
+}
+.button{
+background-color: dodgerblue;
+color: white;
+padding: 10px 12px;
+border: 1px solid lightgray;
+text-decoration: none;
+}
+.cancel{
+background-color: Red;
+color: white;
+padding: 10px 12px;
+border: 1px solid lightgray;
+text-decoration: none;
+margin-bottom: 1px;
+box-shadow: 2px 2px 5px 2px lightgrey;"
+}
+.checkout{
+display: block-inline;
+font-weight: bold;
+background-color: dodgerblue;
+color: white;
+padding: 14px 14px;
+border: 1px solid lightgray;
+text-decoration: none;
+margin-bottom: 1px;
+margin-left: 20px;
+box-shadow: 2px 2px 5px 2px lightgrey;"
+}
+#total{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 50%;
+}
+#tab th{
+border-bottom: 1px solid lightgray;
+border-top: 1px solid lightgray
+}

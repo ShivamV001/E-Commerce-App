@@ -1,0 +1,36 @@
+body{
+	padding: 0;
+	margin:0;
+}
+*{
+	box-sizing: border-box;
+}
+.order{
+	margin: 0;
+	border-collapse: collapse;
+}
+.order th,td{	padding: 20px 60px;
+}
+.order th{
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	background-color: gainsboro;
+}
+ p{
+	background-color: AntiqueWhite;
+	font-weight:bold;
+	
+	padding: 15px 30px;
+}
+#orderpage {
+	width:80%;
+	margin: auto;
+}
+#cancel-o {
+	background-color: red;
+	border-radius: 12px;
+	color: white;
+	font-weight: bold;
+	padding: 15px 20px;
+	text-decoration:none;
+}
