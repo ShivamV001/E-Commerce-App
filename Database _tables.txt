@@ -1,0 +1,65 @@
+
+Database Tables created in this project:
+------------------------------------------
+
+
+create table CUSTOMER (email VARCHAR2(30) PRIMARY KEY,
+ c_name VARCHAR2(20) NOT NULL,
+ c_id NUMBER(4) NOT NULL,
+ password VARCHAR2(10) NOT NULL
+ );
+
+
+SQL> select * from CUSTOMER;
+
+EMAIL                C_NAME                 C_ID PASSWORD
+-------------------- ---------------- ---------- --------
+shivam@gmail.com     SHIVAM VERMA           3050 $hivm@01
+
+
+
+
+*****************************************************
+CREATE TABLE PRODUCTS (P_ID NUMBER(3) PRIMARY KEY,
+ P_NAME VARCHAR2(30) NOT NULL,
+ CATEGORY VARCHAR2(15) NOT NULL,
+ PRICE NUMBER(6,2) NOT NULL,
+ IMAGE VARCHAR2(18) NOT NULL
+ );
+
+
+SQL> select * from PRODUCTS;
+
+      P_ID P_NAME                         CATEGORY             PRICE IMAGE
+---------- ------------------------------ --------------- ---------- ------------------
+       101 Womens stylish heels           women footwears        999 bataWomen.png
+       102 Fastrack mens watch            mens watches          1990 fastrack.jpg
+       106 Mens summer T-shirts           mens clothing          799 mens_Tshirt.png
+       104 MarcLoire stylish heels        women footwears       1499 markLoire.png
+       105 Mens Stylish Jeans             mens clothing         1359 men_jeans.png
+       107 RedTape Stylish Shoes          mens footwears        2295 menSport.png
+       109 Mens Leather Wallet            men accessories        879 menWallet.jpg
+       110 PUMPS womens sandals           women footwears       1190 pumps.png
+       111 Mens Reebok Shoes              mens footwears        1069 reebokShoe.png
+       112 Safari Luggage Bags            Luggages, Bags        1899 safariBag.jpg
+       113 Sonata Stylish Watch           mens watches          1590 sonataWatch.jpg
+
+
+
+**********************************************************************
+SQL> CREATE SEQUENCE orderID START WITH 1010 INCREMENT BY 7;
+
+SQL> CREATE TABLE orderList (order_id NUMBER(4) PRIMARY KEY, 
+ p_id NUMBER(3) NOT NULL,
+ quantity NUMBER(2) NOT NULL,
+ c_id NUMBER(4) NOT NULL,
+ orderDate DATE NOT NULL
+ );
+
+
+SQL> select * from orderlist;
+
+  ORDER_ID       P_ID   QUANTITY       C_ID ORDERDATE
+---------- ---------- ---------- ---------- ---------
+      1150        104          1       3050 22-APR-24
+      1157        106          1       3050 22-APR-24
